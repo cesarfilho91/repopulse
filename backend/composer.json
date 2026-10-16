@@ -1,0 +1,18 @@
+{
+  "name": "cesarfilho/repopulse-api",
+  "description": "API for a real-time GitHub repository activity dashboard.",
+  "type": "project",
+  "require": {
+    "php": "^8.3",
+    "slim/slim": "^4.14",
+    "slim/psr7": "^1.7",
+    "guzzlehttp/guzzle": "^7.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": { "psr-4": { "RepoPulse\\": "src/" } },
+  "autoload-dev": { "psr-4": { "RepoPulse\\Tests\\": "tests/" } },
+  "scripts": { "test": "phpunit", "lint": "find src public -name '*.php' -print0 | xargs -0 -n1 php -l" },
+  "config": { "sort-packages": true, "allow-plugins": {} }
+}
